@@ -1,0 +1,92 @@
+.accordion-wrapper {
+    max-width: 800px; /* Set a max width for the FAQ section */
+    margin: 5rem auto; /* Center the accordion section */
+    background-color: var(--light-gray); /* Use a light background for contrast */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    overflow: hidden; /* To clip any overflow from children */
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.accordion:not(:last-child) {
+    border-bottom: 1px solid var(--black2);
+}
+
+.accordion:first-child {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.accordion:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.accordion__header {
+    background-color: var(--grayish-blue);
+    padding: 1.2rem 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+    position: relative; /* For hover effects */
+}
+
+.accordion__header:hover {
+    background-color: var(--blue-light); /* Change on hover */
+}
+
+.accordion__header > h4 {
+    font-weight: bold; /* Make the question bolder */
+    color: var(--dark-gray); /* Change text color for better readability */
+}
+
+.accordion__header .bx {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--black2);
+    font-size: 16px; /* Decrease icon size for better proportions */
+    transition: 400ms all ease-in-out;
+}
+
+.accordion--expand .accordion__header {
+    background-color: var(--blue);
+    color: var(--white); /* Change text color when expanded */
+}
+
+.accordion--expand .accordion__header .bx {
+    transform: rotate(180deg);
+}
+
+.accordion__body {
+    overflow: hidden;
+    background-color: var(--white); /* Set a white background for the body */
+    max-height: 0px;
+    padding: 0 16px;
+    opacity: 0;
+    transition: 400ms all ease-in-out;
+}
+
+.accordion--expand .accordion__body {
+    opacity: 1;
+    max-height: 500px;
+    padding: 16px; /* Add padding when expanded */
+}
+
+/* Additional styles for improved aesthetics */
+.accordion__body p {
+    margin: 0; /* Remove default margin */
+    color: var(--dark-gray); /* Set a dark gray for body text */
+    line-height: 1.5; /* Improve line height for readability */
+}
