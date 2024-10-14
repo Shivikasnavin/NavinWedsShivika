@@ -857,12 +857,12 @@ header .slider .owl-pagination {
 	text-align: center;
 }
 
-/* .gallery #shuffle-wrapper .col:hover .overlay {
+.gallery #shuffle-wrapper .col:hover .overlay {
 	visibility: visible;
 	-webkit-transform: translateY(0%);
 	transform: translateY(0%);
 	z-index: 5;
-} */
+}
 
 .gallery #shuffle-wrapper .col img {
 	width: 100%;
@@ -877,6 +877,7 @@ header .slider .owl-pagination {
 .gallery #shuffle-wrapper .col:hover img {
 	-webkit-transform: scale(1.3,1.3);
 	transform: scale(1.3,1.3);
+	
 }
 
 
