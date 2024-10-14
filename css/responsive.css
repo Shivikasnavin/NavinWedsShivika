@@ -693,7 +693,7 @@
 @media only screen and (max-width: 767px) {
 	.rsvp .from-wrapper {
 		background-size: 100% 823px;
-		height: 823px;
+		height: 400px;
 	}
 
 	.rsvp form input,
@@ -714,7 +714,7 @@
 
 @media only screen and (max-width: 500px) {
 	.rsvp .form-inline {
-		padding: 160px 10px 40px 10px; 
+		padding: 0px 10px 40px 10px; 
 	}
 
 	.rsvp form input[type="submit"] {
@@ -788,6 +788,12 @@
 		font-size: 14px;
 		padding: 7px 15px;
 		margin: 0 5px 0 0;
+	}
+	.gallery #shuffle-wrapper .overlay p{
+		font-size: 12px;
+	}
+	.gallery #shuffle-wrapper .overlay{
+		display: none;
 	}
 }
 
