@@ -1038,6 +1038,7 @@ header .slider .owl-pagination {
 	background-size: cover;
 	position: relative;
 	overflow: hidden;
+	padding-bottom: 165px;
 }
 
 .rsvp .overlay {
